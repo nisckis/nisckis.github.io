@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nisckis Romero</title>
+    <link rel="stylesheet" href="flipclock.css">
+    <style type="text/css">
+        html, body {
+            background-color: black;
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .clock .flip-clock-label {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div class="clock"></div>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js"></script>
+<script type="text/javascript">
+    var clock = $('.clock').FlipClock(new Date().getTime()/1000-1210636800, {
+        clockFace: 'DailyCounter'
+    });
+</script>
+</body>
+</html>
